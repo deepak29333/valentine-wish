@@ -283,8 +283,8 @@ const animationTimeline = () => {
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  let nameFromUrl = urlParams.get('name');
+  // const urlParams = new URLSearchParams(window.location.search);
+  let nameFromUrl = "Raga Ranjitha";
 
   // Show overlay if name is not present
   if (!nameFromUrl) {
@@ -298,7 +298,7 @@ const fetchData = () => {
     window.va('event', {
       name: 'valentine_wish_viewed',
       data: {
-        recipient: nameFromUrl
+        recipient: nameFromUrl,
       }
     });
   }
